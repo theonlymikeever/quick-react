@@ -14,4 +14,4 @@ app.get('/', (req, res, next) => res.sendFile(path.join(__dirname, 'index.html')
 
 //Run Server
 const port = 1337;
-app.listen(process.env.PORT || 3000, () => console.log(chalk.blue(`Listening intently on port ${port}`)));
+app.listen(process.env.PORT || port, () => console.log(chalk.blue(`Listening intently on port ${port}`)));
